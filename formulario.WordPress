@@ -1,0 +1,18 @@
+<script type="text/javascript">
+function enviar(destino){
+document.formulario.action = destino;
+document.formulario.submit();
+}
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+      
+    <td align="center" valign="middle"><div class="wp-block-button"><p>Ingresá tu DNI y generá tu credencial </p><form name="formulario" method="GET">
+    <input style="width: 200px" name="dni" type="text" placeholder="Ingresá tu DNI"><br><br>
+    
+
+<button type="button" onClick="enviar('https://www.clubsaber.com.ar/cred/card.php')" formtarget="_new" class="wp-block-button__link">Ver Credencial</button><br><br>
+<button type="button" onClick="enviar('https://www.clubsaber.com.ar/cred/cred_pdf.php')" class="wp-block-button__link">Descargar PDF</button>
+</form></div></td>
+  </tr>
+</table>
